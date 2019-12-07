@@ -1,0 +1,36 @@
+CREATE DATABASE ATM
+USE ATMKhach
+GO
+----------
+----CREATE TABLE KHACHHANG
+CREATE TABLE KHACHHANG(
+	FullName varchar(255),
+	Gender varchar(8),
+	Age int,
+	PhoneNumber varchar(15),
+	Role varchar(7),
+	CardID varchar(100),
+	PIN varchar(5),
+	Balance double, 
+)
+	INSERT INTO KHACHHANG VALUES ( 'Duong Tri Tin' ,'Male',18, '+84164813773' ,'admin', '067784511319' , '1642' , 39000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Huynh Nhut Tan' ,'Male',18, '+84123456789' ,'user', '067734819522' , '1593' ,10000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Ha Thuc Huynh Duy' ,'Male',29, '+84332159778' ,'user', '067731442131' , '6789' , 200000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Tran Ngoc Man Huy' ,'Male',32, '+84134456698' ,'user', '067777541236' , '3578' , 30000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Dang Minh Thuan' , 'Male',41,'+84114563289' ,'user', '067754512345' , '9987' , 20000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Diep Tri Thanh' , 'Male',40,'+84641235846' ,'user', '067723697415' , '5137' , 69696000 );
+	INSERT INTO KHACHHANG VALUES ( 'Tran Hoang Qui' , 'Male',29,'+84664875232' ,'user', '067732659845' , '6542' , 600600000 );
+	INSERT INTO KHACHHANG VALUES ( 'Giang Thanh Dinh' ,'Male',22, '+84361135879' ,'user', '067745678912' , '0935' , 19000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Vu Thi Cuc' ,'Female',27, '+84159753789' ,'user', '067747893266' , '3245' , 132000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Tat Huynh Anh Khoi' ,'Male',23, '+84852369147' ,'user', '067784511118' , '1113' , 159000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Nguyen Pham Huu Tai' ,'Male',22, '+84978166366' ,'user', '067710164813' , '0164' , 111111000 );
+	INSERT INTO KHACHHANG VALUES ( 'Vu Thi Oanh' ,'Female',20, '+84164817734' ,'user', '067714597863' , '2679' , 2000000000 );
+	INSERT INTO KHACHHANG VALUES ( 'Vu Hoang Anh' ,'Female',19, '+84168137734' ,'user', '067701234567' , '1234' , 31000000 );
+	---------
+CREATE TABLE bang2(
+	CardID varchar(100),
+	Date datetime,
+	FullName varchar(255),
+	Balance double ,
+	TransactionType varchar(30),
+)
